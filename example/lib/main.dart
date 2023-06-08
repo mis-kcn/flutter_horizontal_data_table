@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:example/data/user.dart';
+import 'package:example/guide_table.dart';
 import 'package:example/simple_rtl_table.dart';
 import 'package:example/simple_table.dart';
 import 'package:example/simple_table_keepalive_image.dart';
@@ -65,6 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
             _getRouteButton(
               'Simple Table',
               SimpleTablePage(
+                user: _user,
+              ),
+            ),
+            _getRouteButton(
+              'Guide Table',
+              GuideTablePage(
                 user: _user,
               ),
             ),
